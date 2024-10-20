@@ -79,7 +79,6 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Estilo para los elementos del carrusel */
 .carousel-wrapper {
   position: relative;
   width: 80%;
@@ -102,16 +101,18 @@ h2 {
 }
 
 input[type='radio'] {
-  display: none;
+  display: none; /* Ocultar los radiobuttons */
 }
 
 #slide1:checked ~ .carousel-inner #item1,
 #slide2:checked ~ .carousel-inner #item2,
 #slide3:checked ~ .carousel-inner #item3,
 #slide4:checked ~ .carousel-inner #item4,
-#slide5:checked ~ .carousel-inner #item5 {
+#slide5:checked ~ .carousel-inner #item5,
+#slide6:checked ~ .carousel-inner #item6,
+#slide7:checked ~ .carousel-inner #item7 {
   opacity: 1;
-  position: relative;
+  position: relative; /* Cambia a un flujo normal cuando está activo */
 }
 
 .nav-labels {
